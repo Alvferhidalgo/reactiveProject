@@ -23,7 +23,7 @@ public class ClientDto {
 
     private Boolean vip;
 
-    private List<Product> historical;
+    private List<ProductDto> historical;
 
-    private List<Product> cart;
+    private List<ProductDto> cart;
 }

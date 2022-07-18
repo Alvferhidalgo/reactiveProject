@@ -9,6 +9,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
+import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 import java.util.List;
 
@@ -31,7 +32,9 @@ public class ClientEntity implements Serializable {
 
     private Boolean vip;
 
-    private List<Product> historical;
+    @NotNull
+    private List<ProductEntity> historical;
 
-    private List<Product> cart;
+    @NotNull
+    private List<ProductEntity> cart;
 }
